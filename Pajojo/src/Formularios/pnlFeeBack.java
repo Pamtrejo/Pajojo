@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paneles;
+package Formularios;
 
 /**
  *
  * @author RojeruSan
  */
-public class pnlCollection extends javax.swing.JPanel {
+public class pnlFeeBack extends javax.swing.JPanel {
 
     /**
      * Creates new form pnlHome
      */
-    public pnlCollection() {
+    public pnlFeeBack() {
         initComponents();
     }
 
@@ -30,6 +30,8 @@ public class pnlCollection extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jRadioButton1 = new javax.swing.JRadioButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -39,13 +41,16 @@ public class pnlCollection extends javax.swing.JPanel {
         jLabel5.setText("EJEMPLO DE MENU HECHO EN JAVA");
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/about.png"))); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Roboto", 1, 48)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(128, 128, 131));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img1/collection.png"))); // NOI18N
-        jLabel7.setText("COLLECTION");
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img1/feeedback.png"))); // NOI18N
+        jLabel7.setText("FEEDBACK");
+
+        jTextField1.setText("jTextField1");
+
+        jRadioButton1.setText("jRadioButton1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -58,17 +63,27 @@ public class pnlCollection extends javax.swing.JPanel {
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 647, Short.MAX_VALUE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(61, 61, 61)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
+                .addComponent(jRadioButton1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
+                .addComponent(jLabel7)
+                .addGap(56, 56, 56)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addGap(104, 104, 104)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jRadioButton1))
+                .addContainerGap(183, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -77,5 +92,7 @@ public class pnlCollection extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

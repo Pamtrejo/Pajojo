@@ -12,7 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import paneles.CambiaPanel;
+import Formularios.CambiaPanel;
 
 /**
  *
@@ -31,7 +31,7 @@ public class Principal extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
         this.uno.setSelected(true);
         
-        new CambiaPanel(pnlPrincipal, new paneles.pnlHome());
+        new CambiaPanel(pnlPrincipal, new Formularios.pnlHome());
     }
 
     /**
@@ -75,7 +75,6 @@ public class Principal extends javax.swing.JFrame {
         pnlMenu.setBackground(new java.awt.Color(131, 169, 25));
         pnlMenu.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 5, 0, 0, new java.awt.Color(239, 238, 244)));
 
-        uno.setBackground(new java.awt.Color(131, 169, 25));
         uno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/home.png"))); // NOI18N
         uno.setText("Home");
         uno.setColorHover(new java.awt.Color(204, 204, 204));
@@ -102,7 +101,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("PEOPLE");
+        jLabel1.setText("Bienvenido: <Nombre Usuario>");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -145,7 +144,6 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        dos.setBackground(new java.awt.Color(131, 169, 25));
         dos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/collection.png"))); // NOI18N
         dos.setText("Collection");
         dos.setColorHover(new java.awt.Color(204, 204, 204));
@@ -218,7 +216,7 @@ public class Principal extends javax.swing.JFrame {
         ocho.setBackground(new java.awt.Color(239, 238, 244));
         ocho.setForeground(new java.awt.Color(128, 128, 131));
         ocho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/web.png"))); // NOI18N
-        ocho.setText("Web");
+        ocho.setText("Perfil Vivienda");
         ocho.setColorHover(new java.awt.Color(204, 204, 204));
         ocho.setColorNormal(new java.awt.Color(239, 238, 244));
         ocho.setColorPressed(new java.awt.Color(204, 204, 204));
@@ -400,7 +398,7 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
-                .addContainerGap(712, Short.MAX_VALUE))
+                .addContainerGap(725, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -427,7 +425,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(128, 128, 131));
-        jLabel4.setText("DASHBOARD");
+        jLabel4.setText("Sistema Residencial");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -436,7 +434,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel4)
-                .addContainerGap(587, Short.MAX_VALUE))
+                .addContainerGap(537, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -491,7 +489,7 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void unoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unoActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlHome());
+        new CambiaPanel(pnlPrincipal, new Formularios.pnlHome());
         if(this.uno.isSelected()){
             this.uno.setColorNormal(new Color(204,204,204));
             this.uno.setColorHover(new Color(204,204,204));
@@ -543,7 +541,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_unoMousePressed
 
     private void tresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tresActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlChat());
+        new CambiaPanel(pnlPrincipal, new Formularios.pnlChat());
         if(this.tres.isSelected()){
             this.tres.setColorNormal(new Color(204,204,204));
             this.tres.setColorHover(new Color(204,204,204));
@@ -606,7 +604,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_dosMousePressed
 
     private void dosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dosActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlCollection());
+        new CambiaPanel(pnlPrincipal, new Formularios.pnlCollection());
         if(this.dos.isSelected()){
             this.dos.setColorNormal(new Color(204,204,204));
             this.dos.setColorHover(new Color(159,208,24));
@@ -667,7 +665,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_ochoMousePressed
 
     private void ochoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ochoActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlWeb());
+        new CambiaPanel(pnlPrincipal, new Formularios.PnVivienda());
         if(this.ocho.isSelected()){
             this.uno.setColorNormal(new Color(239,238,244));
             this.uno.setColorHover(new Color(204,204,204));
@@ -719,7 +717,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_sieteMousePressed
 
     private void sieteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sieteActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlIOS());
+        new CambiaPanel(pnlPrincipal, new Formularios.pnlIOS());
         if(this.siete.isSelected()){
             this.uno.setColorNormal(new Color(239,238,244));
             this.uno.setColorHover(new Color(204,204,204));
@@ -771,7 +769,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_seisMousePressed
 
     private void seisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seisActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlAndroid());
+        new CambiaPanel(pnlPrincipal, new Formularios.pnlAndroid());
         if(this.seis.isSelected()){
             this.uno.setColorNormal(new Color(239,238,244));
             this.uno.setColorHover(new Color(204,204,204));
@@ -812,7 +810,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_seisActionPerformed
 
     private void cincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cincoActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlMarket());
+        new CambiaPanel(pnlPrincipal, new Formularios.pnlMarket());
         if(this.cinco.isSelected()){
             this.uno.setColorNormal(new Color(239,238,244));
             this.uno.setColorHover(new Color(204,204,204));
@@ -875,7 +873,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_cuatroMousePressed
 
     private void cuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuatroActionPerformed
-        new CambiaPanel(pnlPrincipal, new paneles.pnlFeeBack());
+        new CambiaPanel(pnlPrincipal, new Formularios.pnlFeeBack());
         if(this.cuatro.isSelected()){
             this.uno.setColorNormal(new Color(239,238,244));
             this.uno.setColorHover(new Color(204,204,204));

@@ -113,9 +113,6 @@
           <SubComponents>
             <Component class="rsbuttom.RSButtonMetro" name="uno">
               <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="19" green="a9" red="83" type="rgb"/>
-                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/img/home.png"/>
                 </Property>
@@ -183,7 +180,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="PEOPLE"/>
+                    <Property name="text" type="java.lang.String" value="Bienvenido: &lt;Nombre Usuario&gt;"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -229,9 +226,6 @@
             </Component>
             <Component class="rsbuttom.RSButtonMetro" name="dos">
               <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="19" green="a9" red="83" type="rgb"/>
-                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/img/collection.png"/>
                 </Property>
@@ -354,7 +348,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/img/web.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Web"/>
+                <Property name="text" type="java.lang.String" value="Perfil Vivienda"/>
                 <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
@@ -528,7 +522,7 @@
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="712" max="32767" attributes="0"/>
+                      <EmptySpace pref="725" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -622,7 +616,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="587" max="32767" attributes="0"/>
+                          <EmptySpace pref="537" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -645,7 +639,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="83" green="80" red="80" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="DASHBOARD"/>
+                    <Property name="text" type="java.lang.String" value="Sistema Residencial"/>
                   </Properties>
                 </Component>
               </SubComponents>

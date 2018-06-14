@@ -665,6 +665,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_ochoMousePressed
 
     private void ochoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ochoActionPerformed
+       //--
         new CambiaPanel(pnlPrincipal, new Formularios.PnVivienda());
         if(this.ocho.isSelected()){
             this.uno.setColorNormal(new Color(239,238,244));

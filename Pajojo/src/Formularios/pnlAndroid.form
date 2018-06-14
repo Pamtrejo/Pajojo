@@ -41,7 +41,7 @@
               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <EmptySpace pref="62" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -76,10 +76,7 @@
           <Color blue="83" green="80" red="80" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/img1/android.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="ANDROID"/>
+        <Property name="text" type="java.lang.String" value="FACTURACI&#xd3;N"/>
       </Properties>
     </Component>
   </SubComponents>

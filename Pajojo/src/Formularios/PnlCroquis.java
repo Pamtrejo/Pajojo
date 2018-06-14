@@ -6,20 +6,32 @@
 package Formularios;
 
 import java.awt.*;
+import javax.swing.JPanel;
 /**
  *
  * @author Toshiba
  */
-public class croquis extends javax.swing.JPanel {
+public class PnlCroquis extends javax.swing.JPanel {
 
     /**
      * Creates new form croquis
+     * 
      */
-    public croquis() {
-        initComponents();
-        
+    
+    private JPanel pnlPrincipal;
+    
+    
+    public PnlCroquis() {
+        initComponents();      
         
     }
+    
+    public PnlCroquis(JPanel pnPrincipal) {
+        initComponents(); 
+        this.pnlPrincipal = pnPrincipal;
+        
+    }
+
 
    
     
@@ -35,8 +47,9 @@ public class croquis extends javax.swing.JPanel {
 
         jButton1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Añadir vivienda");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -48,6 +61,8 @@ public class croquis extends javax.swing.JPanel {
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("CROQUIS DE RESIDENCIAL");
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/indice.png"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -56,29 +71,37 @@ public class croquis extends javax.swing.JPanel {
                 .addGap(89, 89, 89)
                 .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 673, Short.MAX_VALUE)
                 .addGap(85, 85, 85))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(387, 387, 387))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addGap(44, 44, 44)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel7)
-                .addGap(140, 140, 140)
-                .addComponent(jButton1)
-                .addContainerGap(325, Short.MAX_VALUE))
+                .addGap(83, 83, 83)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addContainerGap(146, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        if(pnlPrincipal != null)
+            new CambiaPanel(pnlPrincipal, new Formularios.PnVivienda(true,0));
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
 }

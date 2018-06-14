@@ -770,7 +770,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_seisMousePressed
 
     private void seisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seisActionPerformed
-        new CambiaPanel(pnlPrincipal, new Formularios.pnlAndroid());
+        new CambiaPanel(pnlPrincipal, new Formularios.PnFacturacion(pnlPrincipal));
         if(this.seis.isSelected()){
             this.uno.setColorNormal(new Color(239,238,244));
             this.uno.setColorHover(new Color(204,204,204));

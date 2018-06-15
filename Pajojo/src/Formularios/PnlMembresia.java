@@ -9,12 +9,12 @@ package Formularios;
  *
  * @author RojeruSan
  */
-public class pnlChat extends javax.swing.JPanel {
+public class PnlMembresia extends javax.swing.JPanel {
 
     /**
      * Creates new form pnlHome
      */
-    public pnlChat() {
+    public PnlMembresia() {
         initComponents();
     }
 

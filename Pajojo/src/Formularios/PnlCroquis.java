@@ -93,7 +93,7 @@ public class PnlCroquis extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if(pnlPrincipal != null)
-            new CambiaPanel(pnlPrincipal, new Formularios.PnVivienda(true,0));
+            new CambiaPanel(pnlPrincipal, new Formularios.PnlVivienda(true,0));
         
         
     }//GEN-LAST:event_jButton1ActionPerformed

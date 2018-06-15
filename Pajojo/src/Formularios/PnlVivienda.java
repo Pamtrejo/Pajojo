@@ -9,7 +9,7 @@ package Formularios;
  *
  * @author RojeruSan
  */
-public class PnVivienda extends javax.swing.JPanel {
+public class PnlVivienda extends javax.swing.JPanel {
 
     /**
      * Creates new form pnlHome
@@ -17,12 +17,12 @@ public class PnVivienda extends javax.swing.JPanel {
     
  
     
-    public PnVivienda() {
+    public PnlVivienda() {
         initComponents();
     }
     
     
-    public PnVivienda(boolean EsEditable,int IdVivienda){
+    public PnlVivienda(boolean EsEditable,int IdVivienda){
      initComponents();
       AgregarDuenioBtn.setEnabled(EsEditable);
    AgregarMembresiaBtn.setEnabled(EsEditable);

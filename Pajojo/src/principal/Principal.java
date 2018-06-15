@@ -541,7 +541,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_unoMousePressed
 
     private void tresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tresActionPerformed
-        new CambiaPanel(pnlPrincipal, new Formularios.pnlChat());
+        new CambiaPanel(pnlPrincipal, new Formularios.PnlMembresia());
         if(this.tres.isSelected()){
             this.tres.setColorNormal(new Color(204,204,204));
             this.tres.setColorHover(new Color(204,204,204));
@@ -811,7 +811,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_seisActionPerformed
 
     private void cincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cincoActionPerformed
-        new CambiaPanel(pnlPrincipal, new Formularios.pnlMarket());
+        new CambiaPanel(pnlPrincipal, new Formularios.PnlVisitas());
         if(this.cinco.isSelected()){
             this.uno.setColorNormal(new Color(239,238,244));
             this.uno.setColorHover(new Color(204,204,204));

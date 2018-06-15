@@ -284,7 +284,7 @@ public class Login extends javax.swing.JFrame {
 
     private void rSButtonRiple1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonRiple1ActionPerformed
         // TODO add your handling code here:
-        this.setVisible(true);
+        this.setVisible(false);
         Principal principal = new Principal();
         principal.setVisible(true);
         

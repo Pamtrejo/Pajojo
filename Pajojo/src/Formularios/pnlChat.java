@@ -29,6 +29,7 @@ public class pnlChat extends javax.swing.JPanel {
 
         jLabel7 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -39,6 +40,8 @@ public class pnlChat extends javax.swing.JPanel {
 
         jRadioButton1.setText("jRadioButton1");
 
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -48,7 +51,9 @@ public class pnlChat extends javax.swing.JPanel {
                 .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 647, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(171, 171, 171)
+                .addGap(68, 68, 68)
+                .addComponent(jLabel1)
+                .addGap(69, 69, 69)
                 .addComponent(jRadioButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -58,13 +63,16 @@ public class pnlChat extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jLabel7)
                 .addGap(136, 136, 136)
-                .addComponent(jRadioButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jLabel1))
                 .addContainerGap(287, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JRadioButton jRadioButton1;
     // End of variables declaration//GEN-END:variables

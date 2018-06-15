@@ -5,6 +5,11 @@
  */
 package Formularios;
 
+import java.awt.Window;
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+import principal.Principal;
+
 
 /**
  *
@@ -109,6 +114,11 @@ public class Login extends javax.swing.JFrame {
         rSButtonRiple1.setColorHover(new java.awt.Color(165, 223, 0));
         rSButtonRiple1.setColorText(new java.awt.Color(0, 0, 0));
         rSButtonRiple1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        rSButtonRiple1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonRiple1ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/candado.png"))); // NOI18N
 
@@ -121,6 +131,11 @@ public class Login extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(153, 153, 153));
         jLabel10.setText("Create tu cuenta ");
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel10MousePressed(evt);
+            }
+        });
 
         rSButtonRiple2.setBackground(new java.awt.Color(255, 255, 255));
         rSButtonRiple2.setForeground(new java.awt.Color(0, 0, 0));
@@ -162,7 +177,6 @@ public class Login extends javax.swing.JFrame {
                                     .addComponent(rSButtonRiple1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(50, 50, 50))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel10)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(rSButtonRiple2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -227,6 +241,11 @@ public class Login extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/borrar.png"))); // NOI18N
         jButton1.setBorder(null);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -254,6 +273,30 @@ public class Login extends javax.swing.JFrame {
     private void rSMTextFull2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMTextFull2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rSMTextFull2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+            // this.setVisible(false);
+        //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        System.exit(0);
+           
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void rSButtonRiple1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonRiple1ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(true);
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        
+    }//GEN-LAST:event_rSButtonRiple1ActionPerformed
+
+    private void jLabel10MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MousePressed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        Registrarse registrarse = new Registrarse();
+        registrarse.setVisible(true);
+        
+    }//GEN-LAST:event_jLabel10MousePressed
 
     /**
      * @param args the command line arguments

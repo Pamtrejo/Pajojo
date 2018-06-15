@@ -31,7 +31,7 @@ public class Principal extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
     
         
-        new CambiaPanel(pnlPrincipal, new Formularios.PnlCroquis());
+        new CambiaPanel(pnlPrincipal, new Formularios.PnlCroquis(pnlPrincipal));
     }
 
     /**
@@ -95,8 +95,8 @@ public class Principal extends javax.swing.JFrame {
 
         tres.setBackground(new java.awt.Color(239, 238, 244));
         tres.setForeground(new java.awt.Color(128, 128, 131));
-        tres.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/chat.png"))); // NOI18N
-        tres.setText("Chat");
+        tres.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pool-membership-card(2).png"))); // NOI18N
+        tres.setText("MEMBRESÍAS");
         tres.setColorHover(new java.awt.Color(204, 204, 204));
         tres.setColorNormal(new java.awt.Color(239, 238, 244));
         tres.setColorPressed(new java.awt.Color(204, 204, 204));
@@ -119,8 +119,8 @@ public class Principal extends javax.swing.JFrame {
 
         cinco.setBackground(new java.awt.Color(239, 238, 244));
         cinco.setForeground(new java.awt.Color(128, 128, 131));
-        cinco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/market.png"))); // NOI18N
-        cinco.setText("Market");
+        cinco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/guest-list.png"))); // NOI18N
+        cinco.setText("REGISTRAR VISITA");
         cinco.setColorHover(new java.awt.Color(204, 204, 204));
         cinco.setColorNormal(new java.awt.Color(239, 238, 244));
         cinco.setColorPressed(new java.awt.Color(204, 204, 204));
@@ -143,8 +143,8 @@ public class Principal extends javax.swing.JFrame {
 
         ocho.setBackground(new java.awt.Color(239, 238, 244));
         ocho.setForeground(new java.awt.Color(128, 128, 131));
-        ocho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/web.png"))); // NOI18N
-        ocho.setText("Perfil Vivienda");
+        ocho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/drawing-house-plan.png"))); // NOI18N
+        ocho.setText("CROQUIS");
         ocho.setColorHover(new java.awt.Color(204, 204, 204));
         ocho.setColorNormal(new java.awt.Color(239, 238, 244));
         ocho.setColorPressed(new java.awt.Color(204, 204, 204));
@@ -167,8 +167,8 @@ public class Principal extends javax.swing.JFrame {
 
         siete.setBackground(new java.awt.Color(239, 238, 244));
         siete.setForeground(new java.awt.Color(128, 128, 131));
-        siete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ios.png"))); // NOI18N
-        siete.setText("IOS");
+        siete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/employee.png"))); // NOI18N
+        siete.setText("RESIDENTES");
         siete.setColorHover(new java.awt.Color(204, 204, 204));
         siete.setColorNormal(new java.awt.Color(239, 238, 244));
         siete.setColorPressed(new java.awt.Color(204, 204, 204));
@@ -191,8 +191,8 @@ public class Principal extends javax.swing.JFrame {
 
         seis.setBackground(new java.awt.Color(239, 238, 244));
         seis.setForeground(new java.awt.Color(128, 128, 131));
-        seis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/android.png"))); // NOI18N
-        seis.setText("Android");
+        seis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/invoice.png"))); // NOI18N
+        seis.setText("FACTURACIÓN");
         seis.setColorHover(new java.awt.Color(204, 204, 204));
         seis.setColorNormal(new java.awt.Color(239, 238, 244));
         seis.setColorPressed(new java.awt.Color(204, 204, 204));

@@ -147,9 +147,9 @@
                   <Color blue="83" green="80" red="80" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/img/chat.png"/>
+                  <Image iconType="3" name="/img/pool-membership-card(2).png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Chat"/>
+                <Property name="text" type="java.lang.String" value="MEMBRES&#xcd;AS"/>
                 <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
@@ -186,9 +186,9 @@
                   <Color blue="83" green="80" red="80" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/img/market.png"/>
+                  <Image iconType="3" name="/img/guest-list.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Market"/>
+                <Property name="text" type="java.lang.String" value="REGISTRAR VISITA"/>
                 <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
@@ -225,9 +225,9 @@
                   <Color blue="83" green="80" red="80" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/img/web.png"/>
+                  <Image iconType="3" name="/img/drawing-house-plan.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Perfil Vivienda"/>
+                <Property name="text" type="java.lang.String" value="CROQUIS"/>
                 <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
@@ -264,9 +264,9 @@
                   <Color blue="83" green="80" red="80" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/img/ios.png"/>
+                  <Image iconType="3" name="/img/employee.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="IOS"/>
+                <Property name="text" type="java.lang.String" value="RESIDENTES"/>
                 <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
@@ -303,9 +303,9 @@
                   <Color blue="83" green="80" red="80" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/img/android.png"/>
+                  <Image iconType="3" name="/img/invoice.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Android"/>
+                <Property name="text" type="java.lang.String" value="FACTURACI&#xd3;N"/>
                 <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>

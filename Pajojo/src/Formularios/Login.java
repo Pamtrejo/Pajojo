@@ -5,7 +5,14 @@
  */
 package Formularios;
 
+import DAL.DAL;
+import DAL.DALVivienda;
+import Modelos.Viviendas;
 import java.awt.Window;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import principal.Principal;
@@ -330,7 +337,18 @@ public class Login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                try {
+                    new Login().setVisible(true);
+                 DALVivienda dal = new DALVivienda();
+                    List<Viviendas> lista = dal.getViviendas();
+                    
+                    for(Viviendas v : lista){
+                        System.out.println("Estado: "+v.getEstado()+" IdVivienda: "+v.getIdVivienda());
+                    }
+                   
+                } catch (SQLException ex) {
+                    Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }

@@ -51,7 +51,7 @@ public class PnlVisitas extends javax.swing.JPanel {
         jLabel7.setFont(new java.awt.Font("Roboto", 1, 48)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(128, 128, 131));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("AÑADIR VISITAS");
+        jLabel7.setText("REGISTRAR VISITAS");
 
         jLabel1.setText("Nombre de visitante");
 

@@ -51,7 +51,7 @@
           <Color blue="83" green="80" red="80" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="A&#xd1;ADIR VISITAS"/>
+        <Property name="text" type="java.lang.String" value="REGISTRAR VISITAS"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel1">

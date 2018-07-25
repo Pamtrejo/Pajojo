@@ -62,8 +62,9 @@ public class DALRoles extends DAL{
             
             try {
                 
-                String sql = "SELECT * FROM vw_Roles";
+                String sql = "SELECT * FROM vw_Roles WHERE IdRol = ?";
                 PreparedStatement cmd = cn.prepareStatement(sql);
+                cmd.setInt(1, Id);
                 
         ResultSet rs = cmd.executeQuery();
        

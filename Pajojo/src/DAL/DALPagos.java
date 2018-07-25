@@ -63,8 +63,9 @@ public class DALPagos extends DAL{
             
             try {
                 
-                String sql = "SELECT * FROM vw_Pagos";
+                String sql = "SELECT * FROM vw_Pagos WHERE IdPago = ?";
                 PreparedStatement cmd = cn.prepareStatement(sql);
+                cmd.setInt(1, Id);
                 
         ResultSet rs = cmd.executeQuery();
        

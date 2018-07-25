@@ -12,6 +12,20 @@ package Modelos;
 public class Recibos {
 
     /**
+     * @return the Monto
+     */
+    public Double getMonto() {
+        return Monto;
+    }
+
+    /**
+     * @param Monto the Monto to set
+     */
+    public void setMonto(Double Monto) {
+        this.Monto = Monto;
+    }
+
+    /**
      * @return the IdRecibos
      */
     public int getIdRecibos() {
@@ -53,7 +67,7 @@ public class Recibos {
         this.Descripcion = Descripcion;
     }
 
-    public Recibos(int IdRecibos, int IdPago, String Descripcion) {
+    public Recibos(int IdRecibos, int IdPago, String Descripcion, Double Monto) {
         this.IdRecibos = IdRecibos;
         this.IdPago = IdPago;
         this.Descripcion = Descripcion;
@@ -62,5 +76,6 @@ public class Recibos {
     private int IdRecibos;
     private int IdPago;
     private String Descripcion;
+    private Double Monto;
     
 }

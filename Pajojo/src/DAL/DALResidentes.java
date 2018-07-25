@@ -64,8 +64,9 @@ public class DALResidentes extends DAL{
             
             try {
                 
-                String sql = "SELECT * FROM vw_Residentes";
+                String sql = "SELECT * FROM vw_Residentes WHERE IdResidente = ?";
                 PreparedStatement cmd = cn.prepareStatement(sql);
+                cmd.setInt(1, Id);
                 
         ResultSet rs = cmd.executeQuery();
        

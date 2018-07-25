@@ -6,6 +6,8 @@
 package DAL;
 
 import Modelos.*;
+import java.sql.CallableStatement;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -23,6 +25,27 @@ public class DALRecibos extends DAL{
         super();
     }
     
+    public int SPInsertarRecibos(int IdVivienda,String Descripcion,Double Monto,Date FechaPago ) throws SQLException{
+        
+        CallableStatement callStatement = null;
+        callStatement = this.cn.prepareCall("{call sp_InsertarRecibo(?,?,?,?)}");
+        callStatement.setInt(1, IdVivienda);
+        callStatement.setString(2, Descripcion);
+        callStatement.setDouble(3, Monto);
+        callStatement.setDate(4, FechaPago);
+
+        //callStatement.executeQuery();
+        
+        ResultSet rs = callStatement.executeQuery();
+        int id = 0;
+        if(rs.next()) {
+    
+            id = rs.getInt("Id");
+    //System.out.println("Equipment ID: " + rs.getString("equipmentID"));
+    }
+    
+        return id;
+    }
     
     //LISTA PARA OBTENER RECIBOS DE LA BD
     public List<Recibos> getRecibos() throws SQLException{
@@ -41,7 +64,8 @@ public class DALRecibos extends DAL{
                     Recibos recibos = 
                             new Recibos(rs.getInt("IdRecibos")
                                     ,rs.getInt("IdPago")
-                                    ,rs.getString("Descripcion"));
+                                    ,rs.getString("Descripcion")
+                                    ,rs.getDouble("Monto"));
                                        
             
              listaRecibos.add(recibos);
@@ -64,8 +88,9 @@ public class DALRecibos extends DAL{
             
             try {
                 
-                String sql = "SELECT * FROM vw_Recibos";
+                String sql = "SELECT * FROM vw_Recibos WHERE IdRecibo = ?";
                 PreparedStatement cmd = cn.prepareStatement(sql);
+                cmd.setInt(1, Id);
                 
         ResultSet rs = cmd.executeQuery();
        
@@ -73,7 +98,8 @@ public class DALRecibos extends DAL{
                     Recibos recibos = 
                             new Recibos(rs.getInt("IdRecibos")
                                     ,rs.getInt("IdPago")
-                                    ,rs.getString("Descripcion"));
+                                    ,rs.getString("Descripcion")
+                                    ,rs.getDouble("Monto"));
                                        
             
              listaRecibos.add(recibos);
